@@ -1,0 +1,111 @@
+/* Configurações Globais e Resets */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #0f172a; /* Fundo Dark Moderno */
+    color: #f8fafc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Container Principal */
+.container {
+    width: 100%;
+    max-width: 480px;
+    text-align: center;
+    position: relative;
+}
+
+/* Botão de Compartilhar */
+.share-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #1e293b;
+    border: 1px solid #334155;
+    color: #f8fafc;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.share-btn:hover {
+    background: #38bdf8;
+    color: #0f172a;
+    border-color: #38bdf8;
+}
+
+/* Perfil */
+.profile {
+    margin-bottom: 32px;
+}
+
+.avatar {
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #38bdf8;
+    margin-bottom: 16px;
+}
+
+.profile h1 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.profile p {
+    font-size: 0.95rem;
+    color: #94a3b8;
+}
+
+/* Lista de Links */
+.links-container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 40px;
+}
+
+.link-card {
+    background: #1e293b;
+    color: #f8fafc;
+    text-decoration: none;
+    padding: 16px;
+    border-radius: 12px;
+    font-weight: 600;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    border: 1px solid #334155;
+    transition: transform 0.2s ease, background-color 0.2s ease, border-color 0.2s ease;
+}
+
+/* Efeito de passar o mouse (Hover) */
+.link-card:hover {
+    transform: scale(1.02);
+    background: #273549;
+    border-color: #38bdf8;
+}
+
+/* Rodapé */
+footer p {
+    font-size: 0.8rem;
+    color: #64748b;
+}
